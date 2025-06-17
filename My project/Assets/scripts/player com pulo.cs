@@ -24,13 +24,13 @@ public class Player : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             gameObject.transform.position += new Vector3(-velocidade * Time.deltaTime,0,0);
-            sprite.flipX = true;
+            sprite.flipX = false;
         }
         
         if (Input.GetKey(KeyCode.D))
         {
             gameObject.transform.position += new Vector3(velocidade * Time.deltaTime,0,0);
-            sprite.flipX = false;
+            sprite.flipX = true;
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && noChao == true)
